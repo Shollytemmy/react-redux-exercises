@@ -1,14 +1,13 @@
 import './App.css';
-import { CakesComponent } from './components/CakesComponent';
-import {useSelector} from 'react-redux'
+import  CakesComponent  from './components/CakesComponent';
+
 
 
 function App() {
-  const {numOfCake} = useSelector((state) => state)
-  console.log(numOfCake)
+
   return (
     <div className="App">
-      <CakesComponent numberOfCake={numOfCake} />
+      <CakesComponent />
       
     </div>
   );
