@@ -22,12 +22,14 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return{
-        buyCake: () => dispatch(cakeAction())
+        buyCake: () => dispatch(cakeAction)
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)
- (CakesComponent)
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(CakesComponent)
 
 
 
