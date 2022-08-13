@@ -7,7 +7,7 @@ import { connect } from 'react-redux'
    
   return (
     <div>
-        <h2>{props.numOfCake}</h2>
+        <h2>No of cakes - {props.numOfCake}</h2>
         <button onClick={props.buyCake}>Buy cakes</button>
     </div>
   )
@@ -16,7 +16,7 @@ import { connect } from 'react-redux'
 
 const mapStateToProps = state => {
     return{
-        numOfCake: state.numOfCake
+        numOfCake: state.cake.numOfCake
     }
 }
 
