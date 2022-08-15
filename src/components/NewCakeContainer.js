@@ -8,7 +8,7 @@ import { connect } from 'react-redux'
     <div>
         <h3>Num of cakes {props.numOfCake}</h3>
         <input type="text" value={amount} onChange={(e) => setAmount(e.target.value)} />
-        <button onClick={()=> props.buyCake(amount) }>Buy cakes</button>
+        <button onClick={()=> props.buyCake(amount) }>Buy {amount} cakes</button>
     </div>
   )
 }
@@ -18,7 +18,7 @@ import { connect } from 'react-redux'
 const mapStateToProps= (state) => {
 
     return{
-        numOfCake: state.numOfCake
+        numOfCake: state.cake.numOfCake
     }
 }
 
