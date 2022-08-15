@@ -2,8 +2,9 @@ import { BUY_CAKE } from "./cakeTypes"
 
 
 
-export const cakeAction = () => {
+export const cakeAction = (amount = 1) => {
     return{
-        type: BUY_CAKE
+        type: BUY_CAKE,
+        payload: amount
     }
 }
